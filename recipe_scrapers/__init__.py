@@ -62,6 +62,7 @@ from .hellofresh import HelloFresh
 from .hostthetoast import Hostthetoast
 from .hundredandonecookbooks import HundredAndOneCookbooks
 from .ig import IG
+from .indianhealthyrecipes import IndianHealthyRecipes
 from .innit import Innit
 from .inspiralized import Inspiralized
 from .jamieoliver import JamieOliver
@@ -76,6 +77,7 @@ from .lecremedelacrumb import LeCremeDeLaCrumb
 from .lovingitvegan import Lovingitvegan
 from .marmiton import Marmiton
 from .matprat import Matprat
+from .melskitchencafe import MelsKitchenCafe
 from .mindmegette import Mindmegette
 from .minimalistbaker import Minimalistbaker
 from .misya import Misya
@@ -88,6 +90,7 @@ from .nourishedbynutrition import NourishedByNutrition
 from .nutritionbynathalie import NutritionByNathalie
 from .nytimes import NYTimes
 from .ohsheglows import OhSheGlows
+from .onehundredonecookbooks import OneHundredOneCookBooks
 from .paleorunningmomma import PaleoRunningMomma
 from .panelinha import Panelinha
 from .paninihappy import PaniniHappy
@@ -124,7 +127,9 @@ from .thewoksoflife import Thewoksoflife
 from .tineno import TineNo
 from .tudogostoso import TudoGostoso
 from .twopeasandtheirpod import TwoPeasAndTheirPod
+from .vanillaandbean import VanillaAndBean
 from .vegolosi import Vegolosi
+from .vegrecipesofindia import VegRecipesOfIndia
 from .watchwhatueat import WatchWhatUEat
 from .whatsgabycooking import WhatsGabyCooking
 from .wholefoods import WholeFoods
@@ -196,6 +201,7 @@ SCRAPERS = {
     Hostthetoast.host(): Hostthetoast,
     HundredAndOneCookbooks.host(): HundredAndOneCookbooks,
     IG.host(): IG,
+    IndianHealthyRecipes.host(): IndianHealthyRecipes,
     Innit.host(): Innit,
     Inspiralized.host(): Inspiralized,
     JamieOliver.host(): JamieOliver,
@@ -208,6 +214,7 @@ SCRAPERS = {
     LivelyTable.host(): LivelyTable,
     LeCremeDeLaCrumb.host(): LeCremeDeLaCrumb,
     Lovingitvegan.host(): Lovingitvegan,
+    OneHundredOneCookBooks.host(): OneHundredOneCookBooks,
     PaleoRunningMomma.host(): PaleoRunningMomma,
     RachlMansfield.host(): RachlMansfield,
     SpruceEats.host(): SpruceEats,
@@ -215,6 +222,7 @@ SCRAPERS = {
     TheNutritiousKitchen.host(): TheNutritiousKitchen,
     Marmiton.host(): Marmiton,
     Matprat.host(): Matprat,
+    MelsKitchenCafe.host(): MelsKitchenCafe,
     Mindmegette.host(): Mindmegette,
     Minimalistbaker.host(): Minimalistbaker,
     Misya.host(): Misya,
@@ -258,6 +266,8 @@ SCRAPERS = {
     TineNo.host(): TineNo,
     TudoGostoso.host(): TudoGostoso,
     TwoPeasAndTheirPod.host(): TwoPeasAndTheirPod,
+    VanillaAndBean.host(): VanillaAndBean,
+    VegRecipesOfIndia.host(): VegRecipesOfIndia,
     Vegolosi.host(): Vegolosi,
     WatchWhatUEat.host(): WatchWhatUEat,
     WhatsGabyCooking.host(): WhatsGabyCooking,

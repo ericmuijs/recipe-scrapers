@@ -1,24 +1,28 @@
 .. image:: https://img.shields.io/pypi/v/recipe-scrapers.svg?
     :target: https://pypi.org/project/recipe-scrapers/
     :alt: Version
-.. image:: https://travis-ci.com/hhursev/recipe-scrapers.svg?branch=master
-    :target: https://travis-ci.com/hhursev/recipe-scrapers
-    :alt: Travis
-.. image:: https://coveralls.io/repos/hhursev/recipe-scraper/badge.svg?branch=master&service=github
-    :target: https://coveralls.io/github/hhursev/recipe-scraper?branch=master
-    :alt: Coveralls
-.. image:: https://img.shields.io/github/license/hhursev/recipe-scrapers?
-    :target: https://github.com/hhursev/recipe-scrapers/blob/master/LICENSE
-    :alt: License
-.. image:: https://img.shields.io/github/stars/hhursev/recipe-scrapers?style=social
-    :target: https://github.com/hhursev/recipe-scrapers/
-    :alt: Github
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-    :target: https://github.com/psf/black
-    :alt: Black formatted
 .. image:: https://pepy.tech/badge/recipe-scrapers
     :target: https://pepy.tech/project/recipe-scrapers
     :alt: Downloads
+.. image:: https://img.shields.io/github/license/hhursev/recipe-scrapers?
+    :target: https://github.com/hhursev/recipe-scrapers/blob/master/LICENSE
+    :alt: License
+.. image:: https://github.com/hhursev/recipe-scrapers/workflows/unittests/badge.svg?branch=master
+    :target: https://github.com/hhursev/recipe-scrapers/actions/
+    :alt: GitHub Actions Unittests
+.. image:: https://coveralls.io/repos/hhursev/recipe-scraper/badge.svg?branch=master&service=github
+    :target: https://coveralls.io/github/hhursev/recipe-scraper?branch=master
+    :alt: Coveralls
+.. image:: https://github.com/hhursev/recipe-scrapers/workflows/linters/badge.svg?branch=master
+    :target: https://github.com/hhursev/recipe-scrapers/actions/
+    :alt: GitHub Actions Linters
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    :alt: Black formatted
+.. image:: https://img.shields.io/github/stars/hhursev/recipe-scrapers?style=social
+    :target: https://github.com/hhursev/recipe-scrapers/
+    :alt: Github
+
 
 ------
 
@@ -58,6 +62,7 @@ Note: ``scraper.links()`` returns a list of dictionaries containing all of the <
 Scrapers available for:
 -----------------------
 
+- `https://101cookbooks.com/ <https://101cookbooks.com/>`_
 - `https://www.750g.com <https://www.750g.com>`_
 - `https://claudia.abril.com.br/ <https://claudia.abril.com.br>`_
 - `https://www.acouplecooks.com <https://acouplecooks.com/>`_
@@ -119,8 +124,8 @@ Scrapers available for:
 - `https://hellofresh.co.uk/ <https://hellofresh.co.uk>`_
 - `https://www.hellofresh.de/ <https://www.hellofresh.de/>`_
 - `https://hostthetoast.com/ <https://hostthetoast.com/>`_
-- `https://101cookbooks.com/ <https://101cookbooks.com/>`_
 - `https://receitas.ig.com.br/ <https://receitas.ig.com.br>`_
+- `https://indianhealthyrecipes.com <https://www.indianhealthyrecipes.com>`_
 - `https://inspiralized.com/ <https://inspiralized.com>`_
 - `https://jamieoliver.com/ <https://jamieoliver.com>`_
 - `https://justbento.com/ <https://justbento.com>`_
@@ -134,6 +139,7 @@ Scrapers available for:
 - `https://lecremedelacrumb.com/ <https://lecremedelacrumb.com/>`_
 - `https://marmiton.org/ <https://marmiton.org/>`_
 - `https://matprat.no/ <https://matprat.no/>`_
+- `https://www.melskitchencafe.com/ <https://www.melskitchencafe.com/>`_
 - `http://mindmegette.hu/ <http://mindmegette.hu/>`_
 - `https://minimalistbaker.com/ <https://minimalistbaker.com/>`_
 - `https://misya.info/ <https://misya.info>`_
@@ -182,7 +188,9 @@ Scrapers available for:
 - `https://tine.no/ <https://tine.no>`_
 - `https://tudogostoso.com.br/ <https://www.tudogostoso.com.br/>`_
 - `https://twopeasandtheirpod.com/ <http://twopeasandtheirpod.com>`_
+- `https://vanillaandbean.com/ <https://vanillaandbean.com>`_
 - `https://vegolosi.it/ <https://vegolosi.it>`_
+- `https://vegrecipesofindia.com/ <https://www.vegrecipesofindia.com/>`_
 - `https://watchwhatueat.com/ <https://watchwhatueat.com/>`_
 - `https://whatsgabycooking.com/ <https://whatsgabycooking.com>`_
 - `https://en.wikibooks.org/ <https://en.wikibooks.org>`_
