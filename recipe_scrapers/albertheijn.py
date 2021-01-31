@@ -1,5 +1,5 @@
 from ._abstract import AbstractScraper
-from ._utils import get_minutes
+from ._utils import get_minutes, normalize_string
 
 
 class AlbertHeijn(AbstractScraper):
@@ -8,13 +8,16 @@ class AlbertHeijn(AbstractScraper):
         return "ah.nl"
 
     def title(self):
-        return self.soup.find('meta', property="twitter:title")['content']
+        return self.soup.find('section', class_ = "header").find('h1', itemprop='name').text.replace('\xad','')
 
     def total_time(self):
         return get_minutes(self.soup.find('div', class_ = "microdata").find('time', itemprop='totalTime')['datetime'])
 
+    def cook_time(self):
+        return get_minutes(self.soup.find('div', class_ = "microdata").find('time', itemprop='cookTime')['datetime'])
+
     def yields(self):
-        return self.soup.find('span', class_= "js-scale-servings scaler__label").text
+        return self.soup.find('div', class_ = "microdata").find('span', itemprop='recipeYield').text
 
     def image(self):
         return self.soup.find('meta', property="og:image")['content']
@@ -25,12 +28,11 @@ class AlbertHeijn(AbstractScraper):
     def instructions(self):
         return '\n'.join([instruction.text for instruction in self.soup.find('section',itemprop="recipeInstructions").find_all('li')])
 
-    def cook_time(self):
-        return None#<span><time itemprop="cookTime" datetime="PT30M"></time></span>
-
-
     def cuisine(self):
-        return None
+        return self.soup.find('div', class_ = "microdata").find('span', itemprop='recipeCuisine').text
+
+    def category(self):
+        return self.soup.find('div', class_ = "microdata").find('span', itemprop='recipeCategory').text
 
     # def ratings(self):
     #     return self.schema.ratings()

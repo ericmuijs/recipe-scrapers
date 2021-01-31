@@ -139,6 +139,10 @@ class AbstractScraper(metaclass=ExceptionHandlingMetaclass):
     def author(self) -> Optional[str]:
         raise NotImplementedError("This should be implemented.")
 
+    @Decorators.schema_org_priority
+    def cuisine(self) -> Optional[str]:
+        raise NotImplementedError("This should be implemented.")
+
     def reviews(self) -> Optional[Any]:
         raise NotImplementedError("This should be implemented.")
 
