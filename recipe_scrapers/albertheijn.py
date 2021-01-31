@@ -6,7 +6,7 @@ class AlbertHeijn(AbstractScraper):
     @classmethod
     def host(cls):
         return "ah.nl"
-    
+
     def title(self):
         return self.soup.find('meta', property="twitter:title")['content']
 
@@ -26,11 +26,11 @@ class AlbertHeijn(AbstractScraper):
         return '\n'.join([instruction.text for instruction in self.soup.find('section',itemprop="recipeInstructions").find_all('li')])
 
     def cook_time(self):
-        #<span><time itemprop="cookTime" datetime="PT30M"></time></span>
+        return None#<span><time itemprop="cookTime" datetime="PT30M"></time></span>
 
-    
+
     def cuisine(self):
-        return 
+        return None
 
     # def ratings(self):
     #     return self.schema.ratings()
