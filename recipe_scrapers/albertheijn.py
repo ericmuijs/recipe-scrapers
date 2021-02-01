@@ -8,31 +8,67 @@ class AlbertHeijn(AbstractScraper):
         return "ah.nl"
 
     def title(self):
-        return self.soup.find('section', class_ = "header").find('h1', itemprop='name').text.replace('\xad','')
+        return (
+            self.soup.find("section", class_="header")
+            .find("h1", itemprop="name")
+            .text.replace("\xad", "")
+        )
 
     def total_time(self):
-        return get_minutes(self.soup.find('div', class_ = "microdata").find('time', itemprop='totalTime')['datetime'])
+        return get_minutes(
+            self.soup.find("div", class_="microdata").find(
+                "time", itemprop="totalTime"
+            )["datetime"]
+        )
 
     def cook_time(self):
-        return get_minutes(self.soup.find('div', class_ = "microdata").find('time', itemprop='cookTime')['datetime'])
+        return get_minutes(
+            self.soup.find("div", class_="microdata").find("time", itemprop="cookTime")[
+                "datetime"
+            ]
+        )
 
     def yields(self):
-        return self.soup.find('div', class_ = "microdata").find('span', itemprop='recipeYield').text
+        return (
+            self.soup.find("div", class_="microdata")
+            .find("span", itemprop="recipeYield")
+            .text
+        )
 
     def image(self):
-        return self.soup.find('meta', property="og:image")['content']
+        return self.soup.find("meta", property="og:image")["content"]
 
     def ingredients(self):
-        return [span.text for span in self.soup.find('ul',class_="list shopping ingredient-selector-list").find_all('span',class_="label")]
+        return [
+            span.text
+            for span in self.soup.find(
+                "ul", class_="list shopping ingredient-selector-list"
+            ).find_all("span", class_="label")
+        ]
 
     def instructions(self):
-        return '\n'.join([instruction.text for instruction in self.soup.find('section',itemprop="recipeInstructions").find_all('li')])
+        return "\n".join(
+            [
+                instruction.text
+                for instruction in self.soup.find(
+                    "section", itemprop="recipeInstructions"
+                ).find_all("li")
+            ]
+        )
 
     def cuisine(self):
-        return self.soup.find('div', class_ = "microdata").find('span', itemprop='recipeCuisine').text
+        return (
+            self.soup.find("div", class_="microdata")
+            .find("span", itemprop="recipeCuisine")
+            .text
+        )
 
     def category(self):
-        return self.soup.find('div', class_ = "microdata").find('span', itemprop='recipeCategory').text
+        return (
+            self.soup.find("div", class_="microdata")
+            .find("span", itemprop="recipeCategory")
+            .text
+        )
 
     # def ratings(self):
     #     return self.schema.ratings()
