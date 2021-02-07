@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<script>(function(){
+        /*
+        Copyright The Closure Library Authors.
+        SPDX-License-Identifier: Apache-2.0
+        */
+        'use strict';var g=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},l=this||self,m=/^[\w+/_-]+[=]{0,2}$/,p=null,q=function(){},r=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";
+            if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},u=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var v=function(a,b){Object.defineProperty(l,a,{configurable:!1,get:function(){return b},set:q})};var y=function(a,b){this.b=a===w&&b||"";this.a=x},x={},w={};var aa=function(a,b){a.src=b instanceof y&&b.constructor===y&&b.a===x?b.b:"type_error:TrustedResourceUrl";if(null===p)b:{b=l.document;if((b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&m.test(b)){p=b;break b}p=""}b=p;b&&a.setAttribute("nonce",b)};var z=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^+new Date).toString(36)};var A=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},B=function(a){this.a=a||l.document||document};B.prototype.appendChild=function(a,b){a.appendChild(b)};var C=function(a,b,c,d,e,f){try{var k=a.a,h=A(a.a,"SCRIPT");h.async=!0;aa(h,b);k.head.appendChild(h);h.addEventListener("load",function(){e();d&&k.head.removeChild(h)});h.addEventListener("error",function(){0<c?C(a,b,c-1,d,e,f):(d&&k.head.removeChild(h),f())})}catch(n){f()}};var ba=l.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ca=l.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),da=l.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),ea=function(a,b,c){this.b=a;this.f=new B(this.b);this.a=null;this.c=[];this.g=!1;this.i=b;this.h=c},F=function(a){if(a.b.body&&!a.g){var b=
+            function(){D(a);l.setTimeout(function(){return E(a,3)},50)};C(a.f,a.i,2,!0,function(){l[a.h]||b()},b);a.g=!0}},D=function(a){for(var b=G(1,5),c=0;c<b;c++){var d=H(a);a.b.body.appendChild(d);a.c.push(d)}b=H(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=G(100,110).toString()+"%";b.style.zIndex=G(2147483544,2147483644).toString();b.style["background-color"]=I(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=I(0,10,0,10,0,10);b.style.display=
+            "flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=H(a);c.style.width=G(80,85).toString()+"%";c.style.maxWidth=G(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=A(a.f.a,"IMG");d.className=z();d.src=ba;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=H(a),f=H(a);f.style["font-weight"]="bold";f.textContent=ca;var k=H(a);k.textContent=da;J(a,
+            e,f);J(a,e,k);J(a,c,d);J(a,c,e);J(a,b,c);a.a=b;a.b.body.appendChild(a.a);b=G(1,5);for(c=0;c<b;c++)d=H(a),a.b.body.appendChild(d),a.c.push(d)},J=function(a,b,c){for(var d=G(1,5),e=0;e<d;e++){var f=H(a);b.appendChild(f)}b.appendChild(c);c=G(1,5);for(d=0;d<c;d++)e=H(a),b.appendChild(e)},G=function(a,b){return Math.floor(a+Math.random()*(b-a))},I=function(a,b,c,d,e,f){return"rgb("+G(Math.max(a,0),Math.min(b,255)).toString()+","+G(Math.max(c,0),Math.min(d,255)).toString()+","+G(Math.max(e,0),Math.min(f,
+            255)).toString()+")"},H=function(a){a=A(a.f.a,"DIV");a.className=z();return a},E=function(a,b){0>=b||null!=a.a&&0!=a.a.offsetHeight&&0!=a.a.offsetWidth||(fa(a),D(a),l.setTimeout(function(){return E(a,b-1)},50))},fa=function(a){var b=a.c;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:g(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.c=[];(b=a.a)&&b.parentNode&&b.parentNode.removeChild(b);a.a=null};var ia=function(a,b,c,d,e){var f=ha(c),k=function(n){n.appendChild(f);l.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},h=function(n){document.body?k(document.body):0<n?l.setTimeout(function(){h(n-1)},e):b()};h(3)},ha=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var K={},L=null;var M=function(){},N="function"==typeof Uint8Array,O=function(a,b){a.b=null;b||(b=[]);a.j=void 0;a.f=-1;a.a=b;a:{if(b=a.a.length){--b;var c=a.a[b];if(!(null===c||"object"!=typeof c||Array.isArray(c)||N&&c instanceof Uint8Array)){a.g=b-a.f;a.c=c;break a}}a.g=Number.MAX_VALUE}a.i={}},P=[],Q=function(a,b){if(b<a.g){b+=a.f;var c=a.a[b];return c===P?a.a[b]=[]:c}if(a.c)return c=a.c[b],c===P?a.c[b]=[]:c},R=function(a,b,c){a.b||(a.b={});if(!a.b[c]){var d=Q(a,c);d&&(a.b[c]=new b(d))}return a.b[c]};
+        M.prototype.h=N?function(){var a=Uint8Array.prototype.toJSON;Uint8Array.prototype.toJSON=function(){var b;void 0===b&&(b=0);if(!L){L={};for(var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),d=["+/=","+/","-_=","-_.","-_"],e=0;5>e;e++){var f=c.concat(d[e].split(""));K[e]=f;for(var k=0;k<f.length;k++){var h=f[k];void 0===L[h]&&(L[h]=k)}}}b=K[b];c=[];for(d=0;d<this.length;d+=3){var n=this[d],t=(e=d+1<this.length)?this[d+1]:0;h=(f=d+2<this.length)?this[d+2]:0;k=n>>2;n=(n&
+            3)<<4|t>>4;t=(t&15)<<2|h>>6;h&=63;f||(h=64,e||(t=64));c.push(b[k],b[n],b[t]||"",b[h]||"")}return c.join("")};try{return JSON.stringify(this.a&&this.a,S)}finally{Uint8Array.prototype.toJSON=a}}:function(){return JSON.stringify(this.a&&this.a,S)};var S=function(a,b){return"number"!==typeof b||!isNaN(b)&&Infinity!==b&&-Infinity!==b?b:String(b)};M.prototype.toString=function(){return this.a.toString()};var T=function(a){O(this,a)};u(T,M);var U=function(a){O(this,a)};u(U,M);var ja=function(a,b){this.c=new B(a);var c=R(b,T,5);c=new y(w,Q(c,4)||"");this.b=new ea(a,c,Q(b,4));this.a=b},ka=function(a,b,c,d){b=new T(b?JSON.parse(b):null);b=new y(w,Q(b,4)||"");C(a.c,b,3,!1,c,function(){ia(function(){F(a.b);d(!1)},function(){d(!0)},Q(a.a,2),Q(a.a,3),Q(a.a,1))})};var la=function(a,b){V(a,"internal_api_load_with_sb",function(c,d,e){ka(b,c,d,e)});V(a,"internal_api_sb",function(){F(b.b)})},V=function(a,b,c){a=l.btoa(a+b);v(a,c)},W=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];e=l.btoa(a+b);e=l[e];if("function"==r(e))e.apply(null,d);else throw Error("API not exported.");};var X=function(a){O(this,a)};u(X,M);var Y=function(a){this.h=window;this.a=a;this.b=Q(this.a,1);this.f=R(this.a,T,2);this.g=R(this.a,U,3);this.c=!1};Y.prototype.start=function(){ma();var a=new ja(this.h.document,this.g);la(this.b,a);na(this)};
+        var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
+            e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
+
+        window.__d3lUW8vwsKlB__("WyJlMzIyMWY1ODI1M2VkMWUzIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4Vzc5Q1o4MEpHbkl6QUl1OHc1T0NqNHNqTnRxck80bkJEeXZ5VEVyZDZ3RjlvQ2p3bnRBaE01eDFtekhOV2haRkdNWkMzTGM1YTJRTzJDMUlHNXdQd1x1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiWlRNeU1qRm1OVGd5TlRObFpERmxNd1x1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC9lMzIyMWY1ODI1M2VkMWUzLmpzP3VzcXBcdTAwM2RDQWMiXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVRGVXSFlnaVRPYVJqMUxVZHpwTkt2YzhpRHdfSzRuZXJHT3hxWGIycHNJemhMLTVqVVB5b2RXcUhEdnREUlNfU0FGVE9BMVF3UW5EUXdBaVRsP2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4VzF5bk9tdDgzTlpmNXJFUk1xel9LaGVzUVB3SzREZWxIN3VDdXA4enlOSTczLVhkdkptWmU1OWlfcTgtX0JTalZ6bDRJVWlZRFFzLXdYTjZnSz9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hVNkdNYXlMSC1aRE43T2NNNk5MM2NoLW42YWVxQ1dlZU9VazNPOFZlbGpZSmcwV05NRjlVX2R0SkpOd2MxUExMMmZrUGZkRXFwYWZEaEhhZmhSP3NiZlx1MDAzZDIiXQo=");
+    </script>
+<script data-minify="1" src="https://www.lekkerensimpel.com/wp-content/cache/min/1/onstuimig-tag-manager/base/adf-tm-base-min-b3968fa8f4098ffbacb28ccdb435e87c.js" async></script>
+
+<title>Pastaschotel met spinazie en spekjes - Lekker en Simpel</title><style id="rocket-critical-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-20:#005a87}.wp-block-image{margin-bottom:1em}.wp-block-image img{max-width:100%}.main-navigation ul.menu,.main-navigation ul li .sub-menu{margin-bottom:0;margin-left:0;padding-left:0;list-style:none}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button{text-transform:none}[type=submit],button{-webkit-appearance:button}[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}body,figure,h1,h2,p,ul{margin:0;padding:0}li>ul{margin-bottom:0}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}[type=submit],button{-webkit-appearance:none;-moz-appearance:none;border:0;margin:0;padding:0;font:inherit}.screen-reader-text{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}[data-animation]{opacity:0}@media (-ms-high-contrast:active),(-ms-high-contrast:none){[data-animation]{opacity:1!important}}@supports not (display:grid){[data-animation]{opacity:1!important}}@media (prefers-reduced-motion:reduce){[data-animation]{animation-duration:1ms!important;animation-delay:1ms!important}}:root{--block-width:75rem;--block-spacing:1.33333rem;--block-spacing-large:1.77778rem;--block-padding:0.88889rem}@media print,screen and (min-width:40em){:root{--block-spacing:1.77778rem;--block-spacing-large:3.55556rem}}html{overflow-y:scroll;min-height:100%}body{overflow-x:hidden}form{margin-bottom:0}img{display:inline-block;vertical-align:middle;max-width:100%;height:auto;-ms-interpolation-mode:bicubic;box-sizing:inherit}.image-placeholder{background-color:#f5f5f5;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M0 .178h29.995v25.617H0z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0 6)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath d='M29.995 11.777c0 7.742-6.715 14.018-14.998 14.018C6.715 25.795 0 19.52 0 11.777c0-3.72 1.55-7.1 4.077-9.608a6.844 6.844 0 015.939-1.9 30.65 30.65 0 004.981.392A30.896 30.896 0 0019.98.27a6.844 6.844 0 015.939 1.899c2.528 2.509 4.077 5.889 4.077 9.608' fill='%23E6E6E6' mask='url(https://www.lekkerensimpel.com/wp-content/themes/vo-theme/%23b)'/%3E%3C/g%3E%3Cpath d='M10.12 8.136c1.702 1.152 8.058 1.152 9.76 0 2.177-1.473 3.525-3.357 3.01-4.208-.513-.85-2.695-.346-4.872 1.127a13.2 13.2 0 00-.488.347c-.338.254-.802-.001-.802-.44v-.011C16.728 2.216 15.954 0 15 0s-1.728 2.216-1.728 4.95v.013c0 .438-.464.692-.802.44-.157-.119-.32-.235-.488-.348-2.177-1.473-4.358-1.978-4.873-1.127-.514.851.834 2.735 3.01 4.208' fill='%23DCDCDC'/%3E%3Cpath d='M19.88 7.168c-1.702 1.11-8.058 1.11-9.76 0-2.177-1.418-3.525-3.23-3.01-4.05A.64.64 0 017.205 3c.427.875 1.494 1.968 2.914 2.893C11.822 7 18.178 7 19.88 5.893 21.3 4.968 22.367 3.875 22.795 3a.654.654 0 01.096.118c.514.82-.834 2.632-3.01 4.05' fill='%23D1D1D1'/%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position:50%}.site-content{margin:var(--block-spacing) 0}body{font-family:Karla,Helvetica,sans-serif;font-size:1.125rem;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.h1,h1{text-transform:uppercase;font-family:Raleway,Helvetica,sans-serif;margin-bottom:.5rem;letter-spacing:.16667rem;font-size:1.44444rem}@media print,screen and (min-width:40em){.h1,h1{letter-spacing:.27778rem;font-size:2.22222rem}}h2{letter-spacing:.16667rem;font-size:1.33333rem}h2{text-transform:uppercase;font-family:Raleway,Helvetica,sans-serif;margin-bottom:.5rem}p{color:#333;line-height:1.55556rem;margin-bottom:1rem}p:last-child{margin-bottom:0}ul{margin:0 0 1rem 1rem}.grid-container{max-width:75rem}.grid-container{padding-right:.83333rem;padding-left:.83333rem;margin-left:auto;margin-right:auto}.grid-x{display:flex;flex-flow:row wrap}.cell{flex:0 0 auto;min-height:0;min-width:0;width:100%}.grid-x>.small-6{flex-basis:auto}@media print,screen and (min-width:40em){.grid-x>.medium-4,.grid-x>.medium-8{flex-basis:auto}}@media print,screen and (min-width:64em){.grid-x>.large-4{flex-basis:auto}}.grid-x>.small-6{flex:0 0 auto}.grid-x>.small-6{width:50%}@media print,screen and (min-width:40em){.grid-x>.medium-4,.grid-x>.medium-8{flex:0 0 auto}.grid-x>.medium-4{width:33.33333%}.grid-x>.medium-8{width:66.66667%}}@media print,screen and (min-width:64em){.grid-x>.large-4{flex:0 0 auto}.grid-x>.large-4{width:33.33333%}}.grid-margin-x{margin-left:-.83333rem;margin-right:-.83333rem}.grid-margin-x>.cell{width:calc(100% - 1.66667rem);margin-left:.83333rem;margin-right:.83333rem}.grid-margin-x>.small-6{width:calc(50% - 1.66667rem)}.grid-container:not(.full)>.grid-padding-x{margin-right:-.83333rem;margin-left:-.83333rem}.grid-padding-x>.cell{padding-right:.83333rem;padding-left:.83333rem}@media print,screen and (min-width:40em){.medium-order-1{order:1}.medium-order-2{order:2}}@media print,screen and (max-width:39.99875em){.hide-for-small-only{display:none!important}}@media screen and (max-width:0em),screen and (min-width:40em){.show-for-small-only{display:none!important}}button{background:transparent;outline:none}.header{display:flex;max-width:var(--block-width);margin-left:auto;margin-right:auto;padding:1.33333rem var(--block-padding);align-items:center;background:#fff;z-index:1;flex-direction:row;position:relative}.header__button{display:inline-block;font-size:1rem;color:#000;margin:0 1.33333rem 0 0;line-height:2em}.site-branding{flex:2}.site-branding .site-title{font-size:1.11111rem}.site-branding .site-title a{color:#333;text-decoration:none;display:flex;align-items:center}.site-branding .site-title span{display:block;padding:.44444rem 0 0 .88889rem}@media print,screen and (min-width:64em){.site-branding .site-title{font-size:0;margin:0}}.site-branding .site-title svg{width:35px;height:auto;display:block}@media print,screen and (min-width:64em){.site-branding .site-title svg{width:50px}}.header-search{position:absolute;top:0;left:0;width:100%;z-index:99;transform:translateY(-100%);height:100%}.header-search__form{max-width:100vw;display:flex;align-items:center;padding:1.33333rem var(--block-padding);height:100%;font-size:1rem}@media print,screen and (min-width:40em){.header-search__form{max-width:var(--block-width);margin-left:auto;margin-right:auto}}.header-search__form form{display:flex;margin:0 .88889rem;align-items:center;flex-grow:1}.header-search__form form input[type=text]{padding:0;width:100%;flex-grow:1;border:0}.header-search__form form input[type=text]::-webkit-input-placeholder{color:#333}.header-search__form form input[type=text]:-moz-placeholder,.header-search__form form input[type=text]::-moz-placeholder{color:#333}.header-search__form form input[type=text]:-ms-input-placeholder{color:#333}.header-search__form form input[type=submit]{display:none}.search-toggle{font-size:1rem}.main-navigation{display:flex;flex-direction:row}.main-navigation ul.menu{opacity:0;transform:translateY(40px)}.main-navigation ul.menu{width:100%;position:absolute;left:0;background:#fff;visibility:hidden}@media print,screen and (min-width:64em){.main-navigation ul.menu{display:flex;align-items:center;justify-content:center;position:relative;opacity:1;visibility:visible;transform:translateY(0)}}.main-navigation ul.menu li{position:relative}.main-navigation ul.menu li a{margin:0 .88889rem;font-size:1rem;letter-spacing:.13889rem;text-transform:uppercase;font-weight:700;display:block;text-decoration:none;color:#333;border-bottom:2px solid transparent;padding:.22222rem 0}@media print,screen and (min-width:64em){.main-navigation ul.menu li a{margin:0 1.33333rem}}.main-navigation ul li.toggle-submenu{position:relative}.main-navigation ul li.toggle-submenu:before{content:"+";display:inline-block;height:15px;width:15px;border-radius:50%;background:#ef565c;color:#fff;text-align:center;line-height:13px;margin:0 0 0 .88889rem;font-size:14px;position:absolute;right:15px}.main-navigation ul li.toggle-submenu a{display:inline-block;position:static}.main-navigation ul li.toggle-submenu .sub-menu .toggle-submenu:before{display:none}@media print,screen and (min-width:64em){.main-navigation ul li.toggle-submenu:before{display:none}}.main-navigation ul li .sub-menu{background:#f5f5f5;font-size:0;opacity:0;visibility:hidden;height:0;overflow:hidden}@media print,screen and (min-width:64em){.main-navigation ul li .sub-menu{position:absolute;transform:translate(-50%,10px);left:50%;min-width:280px;padding:.88889rem 0;height:auto;overflow:visible}.main-navigation ul li .sub-menu:before{content:"";display:block;width:15px;height:15px;background:#f5f5f5;position:absolute;top:-6px;left:50%;transform:translateX(-50%) rotate(45deg)}.main-navigation ul li .sub-menu .sub-menu{transform:translate(100%,-40px);background:#ef565c;left:0;width:100%}.main-navigation ul li .sub-menu .sub-menu:before{background:#ef565c;top:20px;left:-6px;transform:rotate(45deg)}.main-navigation ul li .sub-menu .sub-menu a{color:#fff}}.main-navigation ul li .sub-menu li .sub-menu{margin:0 0 0 .88889rem}@media print,screen and (min-width:64em){.main-navigation ul li .sub-menu li .sub-menu{margin:0}}.main-navigation ul li .sub-menu li a{font-size:.88889rem;color:#707070}.menu-toggle{width:25px;margin:0 .88889rem 0 0;position:relative}@media print,screen and (min-width:64em){.menu-toggle{display:none}}.menu-toggle span{display:block;height:3px;width:100%;background:#000;margin:.22222rem 0}.menu-toggle span:first-child{width:70%}.menu-toggle span:last-child{width:50%}.social-list li span{display:none}.hero,.hero__image{position:relative}.hero__image{min-height:180px;max-height:300px;overflow:hidden}@media print,screen and (min-width:40em){.hero__image{min-height:230px;max-height:300px}}.hero__image:after{content:"";display:block;padding-bottom:30%}.hero__image img{width:100%;height:auto;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}.hero__inner{height:100%;top:0;background-image:linear-gradient(180deg,transparent,rgba(0,0,0,.4))}.hero__content,.hero__inner{position:absolute;width:100%;left:0}.hero__content{bottom:0;padding:1.77778rem 0}.hero__title{color:#fff}.entry__content>*+*{margin-top:var(--block-spacing);margin-bottom:var(--block-spacing)}.comment-form p input{width:100%}.comment-form .form-submit input{display:inline-block;vertical-align:middle;font:inherit;text-align:center;padding:.55556rem .88889rem;text-decoration:none;color:#fff;border:1px solid #ef565c;background:#ef565c;border-radius:1px;font-weight:700;text-transform:uppercase;letter-spacing:1px;width:auto}[data-tab-toggle]{display:none}@media print,screen and (min-width:40em){[data-tab-toggle]{display:block}}[data-tab-toggle][data-tab-toggle-active]{display:block}img[data-lazy-src]{border:0;opacity:0}input[type=text]{background:#fff;border:1px solid #707070;padding:10px 15px;box-shadow:none;border-radius:1px;box-sizing:border-box;outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type=text]::-webkit-input-placeholder{color:#707070}input[type=text]:-moz-placeholder,input[type=text]::-moz-placeholder{color:#707070}input[type=text]:-ms-input-placeholder{color:#707070}.like-no-ajax{position:absolute;z-index:99;font-size:1.11111rem;background:#fff;box-shadow:0 15px 20px rgba(0,0,0,.1);height:36px;width:36px;text-align:center;top:.88889rem;right:.88889rem}.like-no-ajax{color:#ef565c}.cookbooks .cookbooks__title{margin:15px 0}.cookbooks .cookbooks__inner .cookbook__item{padding-bottom:1.66667rem}</style>
+<meta name="description" content="Wie is er nou niet gek op een lekkere pastaschotel? Deze pastaschotel met spinazie, spekjes en bechamelsaus is echt een aanrader!" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/" />
+<meta property="og:locale" content="nl_NL" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Pastaschotel met spinazie en spekjes - Lekker en Simpel" />
+<meta property="og:description" content="Wie is er nou niet gek op een lekkere pastaschotel? Deze pastaschotel met spinazie, spekjes en bechamelsaus is echt een aanrader!" />
+<meta property="og:url" content="https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/" />
+<meta property="og:site_name" content="Lekker en Simpel" />
+<meta property="article:publisher" content="https://www.facebook.com/lekkerensimpelnl" />
+<meta property="article:published_time" content="2021-02-06T05:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-30T09:35:48+00:00" />
+<meta property="og:image" content="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563.jpg" />
+<meta property="og:image:width" content="1360" />
+<meta property="og:image:height" content="907" />
+<meta name="twitter:label1" content="Geschreven door">
+<meta name="twitter:data1" content="Lekker en Simpel">
+<meta name="twitter:label2" content="Geschatte leestijd">
+<meta name="twitter:data2" content="1 minuut">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.lekkerensimpel.com/#website","url":"https://www.lekkerensimpel.com/","name":"Lekker en Simpel","description":"Elke dag weer nieuwe lekkere, snelle en simpele recepten op Lekker en Simpel.","potentialAction":[{"@type":"SearchAction","target":"https://www.lekkerensimpel.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"nl"},{"@type":"ImageObject","@id":"https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/#primaryimage","inLanguage":"nl","url":"https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563.jpg","width":1360,"height":907,"caption":"Pastaschotel met spinazie en spekjes"},{"@type":"WebPage","@id":"https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/#webpage","url":"https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/","name":"Pastaschotel met spinazie en spekjes - Lekker en Simpel","isPartOf":{"@id":"https://www.lekkerensimpel.com/#website"},"primaryImageOfPage":{"@id":"https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/#primaryimage"},"datePublished":"2021-02-06T05:00:00+00:00","dateModified":"2021-01-30T09:35:48+00:00","author":{"@id":"https://www.lekkerensimpel.com/#/schema/person/e47d035d8c308aeae2e21bfb3fccb604"},"description":"Wie is er nou niet gek op een lekkere pastaschotel? Deze pastaschotel met spinazie, spekjes en bechamelsaus is echt een aanrader!","inLanguage":"nl","potentialAction":[{"@type":"ReadAction","target":["https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/"]}]},{"@type":"Person","@id":"https://www.lekkerensimpel.com/#/schema/person/e47d035d8c308aeae2e21bfb3fccb604","name":"Lekker en Simpel","image":{"@type":"ImageObject","@id":"https://www.lekkerensimpel.com/#personlogo","inLanguage":"nl","url":"https://secure.gravatar.com/avatar/c55867405eaefa2ca193d82cc8c81654?s=96&d=identicon&r=g","caption":"Lekker en Simpel"},"description":"Sofie en Jorrit - 26 &amp; 28 jaar - houden van lekkere en simpele gerechten en zijn hier dagelijks mee bezig - Eigenaar van de website Lekker en Simpel en het gelijknamige kookboek"}]}</script>
+
+<link rel='dns-prefetch' href='//polyfill.io' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//m9m6e2w5.stackpathcdn.com' />
+<link rel='dns-prefetch' href='//cdn.shareaholic.net' />
+<link rel='dns-prefetch' href='//www.shareaholic.net' />
+<link rel='dns-prefetch' href='//analytics.shareaholic.com' />
+<link rel='dns-prefetch' href='//recs.shareaholic.com' />
+<link rel='dns-prefetch' href='//go.shareaholic.com' />
+<link rel='dns-prefetch' href='//partner.shareaholic.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Lekker en Simpel &raquo; Feed" href="https://www.lekkerensimpel.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Lekker en Simpel &raquo; Reactiesfeed" href="https://www.lekkerensimpel.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Lekker en Simpel &raquo; Pastaschotel met spinazie en spekjes Reactiesfeed" href="https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/feed/" />
+
+<link rel='preload' href='//cdn.shareaholic.net/assets/pub/shareaholic.js' as='script' />
+<script data-no-minify='1' data-cfasync='false'>
+_SHR_SETTINGS = {"endpoints":{"local_recs_url":"https:\/\/www.lekkerensimpel.com\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","ajax_url":"https:\/\/www.lekkerensimpel.com\/wp-admin\/admin-ajax.php"},"site_id":"16c090a38c676d83df2977324084a1e3","url_components":{"year":"2021","monthnum":"02","day":"06","hour":"06","minute":"00","second":"00","post_id":"59855","postname":"pastaschotel-met-spinazie-en-spekjes","category":"hoofdgerechten"}};
+</script>
+<script data-no-minify='1' data-cfasync='false' src='//cdn.shareaholic.net/assets/pub/shareaholic.js' data-shr-siteid='16c090a38c676d83df2977324084a1e3' async></script>
+
+<meta name='shareaholic:site_name' content='Lekker en Simpel' />
+<meta name='shareaholic:language' content='nl' />
+<meta name='shareaholic:url' content='https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/' />
+<meta name='shareaholic:keywords' content='tag:pasta, tag:spek, tag:spinazie, tag:pastaschotel met spinazie, cat:italiaanse recepten, cat:pasta recepten, cat:ovenschotels, cat:hoofdgerechten, type:post' />
+<meta name='shareaholic:article_published_time' content='2021-02-06T06:00:00+01:00' />
+<meta name='shareaholic:article_modified_time' content='2021-01-30T10:35:48+01:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Lekker en Simpel' />
+<meta name='shareaholic:site_id' content='16c090a38c676d83df2977324084a1e3' />
+<meta name='shareaholic:wp_version' content='9.5.0' />
+<meta name='shareaholic:image' content='https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-640x427.jpg' />
+
+
+<script type="text/javascript" data-cfasync="false">
+    (window.gaDevIds=window.gaDevIds||[]).push("dZGIzZG");
+	var mi_version         = '7.13.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-28278410-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-28278410-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('set', 'anonymizeIp', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Niet werkende functie __gaTracker(' + arguments[0] + " ....) omdat je niet gevolgd wordt. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+
+<link rel='preload' href='https://www.lekkerensimpel.com/wp-includes/css/dist/block-library/style.min.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload' href='https://www.lekkerensimpel.com/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.0' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload' href='https://www.lekkerensimpel.com/wp-content/plugins/wp-gdpr-compliance/assets/css/front.min.css?ver=1594817082' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<style id='wpgdprc.css-inline-css' type='text/css'>
+
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:before { content: 'Ja'; }
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:after { content: 'Nee'; }
+        
+</style>
+<link rel='preload' href='https://fonts.googleapis.com/css?family=Karla%3A400%2C700%7CRaleway%3A700&#038;display=swap' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload' href='https://www.lekkerensimpel.com/wp-content/cache/min/1/wp-content/themes/vo-theme/style-a596bb3ec42a3c8916cc095ec9f7b47c.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://www.lekkerensimpel.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.lekkerensimpel.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lekkerensimpel.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.13.0' id='monsterinsights-frontend-script-js'></script>
+<script data-minify="1" type='text/javascript' src='https://www.lekkerensimpel.com/wp-content/cache/min/1/v3/polyfill.min-deff831c231c5373cc5d68d5998b2877.js' id='polyfill-io-js'></script>
+<script type='text/javascript' src='https://www.lekkerensimpel.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.lekkerensimpel.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.lekkerensimpel.com/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://www.lekkerensimpel.com/?p=59855' />
+<link rel="alternate" type="application/json+oembed" href="https://www.lekkerensimpel.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lekkerensimpel.com%2Fpastaschotel-met-spinazie-en-spekjes%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.lekkerensimpel.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lekkerensimpel.com%2Fpastaschotel-met-spinazie-en-spekjes%2F&#038;format=xml" />
+<script>document.createElement( "picture" );if(!window.HTMLPictureElement && document.addEventListener) {window.addEventListener("DOMContentLoaded", function() {var s = document.createElement("script");s.src = "https://www.lekkerensimpel.com/wp-content/plugins/webp-express/js/picturefill.min.js";document.body.appendChild(s);});}</script><link rel="icon" href="https://www.lekkerensimpel.com/wp-content/uploads/2015/03/1041c-54f48e32_site_icon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.lekkerensimpel.com/wp-content/uploads/2015/03/1041c-54f48e32_site_icon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.lekkerensimpel.com/wp-content/uploads/2015/03/1041c-54f48e32_site_icon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.lekkerensimpel.com/wp-content/uploads/2015/03/1041c-54f48e32_site_icon-300x300.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script>
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+<body class="post-template-default single single-post postid-59855 single-format-standard">
+<a class="skip-link screen-reader-text" href="#main-content">Meteen naar de content</a>
+<header id="top-header" class="header header--page" data-animation>
+<div class="header-search">
+<div class="header-search__form">
+<i class="fas fa-search"></i>
+<form method="get" id="searchform" action="https://www.lekkerensimpel.com/">
+<input type="text" class="header-search__field" name="s" id="s" placeholder="Waar ben je naar opzoek?" />
+<input type="submit" class="submit" name="submit" id="searchsubmit" value="Zoeken" />
+</form>
+<button class="search-close-toggle" aria-controls="search-field" aria-expanded="false">
+<i class="fas fa-times"></i>
+</button>
+</div>
+</div>
+<div class="site-branding">
+<div class="h1 site-title">
+<a href="https://www.lekkerensimpel.com/" rel="home">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147 157"><defs><path id="a" d="M0 .869h146.974V126H0z" /></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 30.543)"><mask id="b" fill="#fff"><use xlink:href="#a" /></mask><path fill="#EF565C" d="M146.975 57.525c0 37.817-32.901 68.475-73.487 68.475C32.9 126-.002 95.342-.002 57.525 0 39.36 7.59 22.848 19.978 10.592a33.602 33.602 0 0129.099-9.275c7.398 1.225 15.674 1.91 24.41 1.91S90.5 2.541 97.9 1.316a33.603 33.603 0 0129.097 9.275c12.389 12.256 19.979 28.767 19.979 46.933" mask="url(#b)" /></g><path fill="#74C664" d="M48.943 38.667c8.562 5.474 40.527 5.474 49.09 0 10.946-7 17.724-15.955 15.14-19.999-2.586-4.043-13.559-1.646-24.507 5.355a65.106 65.106 0 00-2.454 1.651c-1.702 1.204-4.036-.006-4.034-2.089v-.056C82.178 10.533 78.288 0 73.488 0c-4.8 0-8.692 10.533-8.692 23.528v.057c.002 2.083-2.332 3.291-4.034 2.09a62.395 62.395 0 00-2.454-1.652c-10.948-7-21.92-9.398-24.506-5.355-2.587 4.044 4.193 12.997 15.141 20" /><path fill="#1A914A" d="M98.03 38.666c-8.56 5.476-40.524 5.476-49.085 0-10.949-7.001-17.728-15.953-15.143-19.997.14-.215.3-.413.484-.585 2.15 4.32 7.517 9.716 14.66 14.284 8.56 5.472 40.523 5.472 49.084 0 7.14-4.568 12.508-9.964 14.66-14.285.181.174.342.372.481.586 2.586 4.043-4.192 12.995-15.14 19.997" /></g></svg> <span>
+Lekker en Simpel </span>
+</a>
+</div>
+</div>
+<nav id="site-navigation" class="main-navigation">
+<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul id="primary-menu" class="menu">
+<li id="menu-item-19489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-19489"><a href="https://www.lekkerensimpel.com/">Home</a></li>
+<li id="menu-item-52654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children toggle-submenu menu-item-52654"><a href="https://www.lekkerensimpel.com/recepten/">Recepten</a>
+<ul class="sub-menu">
+<li id="menu-item-24093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24093"><a href="https://www.lekkerensimpel.com/ontbijtrecepten/">Ontbijt ideeën</a></li>
+<li id="menu-item-24092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24092"><a href="https://www.lekkerensimpel.com/lunchrecepten/">lunchgerechten</a></li>
+<li id="menu-item-24702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24702"><a href="https://www.lekkerensimpel.com/tussendoortjes/">Tussendoortjes</a></li>
+<li id="menu-item-51797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51797"><a href="https://www.lekkerensimpel.com/tag/voorgerecht/">Voorgerechten</a></li>
+<li id="menu-item-24248" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-24248"><a href="https://www.lekkerensimpel.com/hoofdgerechten/">Hoofdgerechten</a></li>
+<li id="menu-item-51761" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51761"><a href="https://www.lekkerensimpel.com/bijgerechten/">Bijgerechten</a></li>
+<li id="menu-item-24088" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24088"><a href="https://www.lekkerensimpel.com/nagerechten/">Desserts</a></li>
+<li id="menu-item-24081" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24081"><a href="https://www.lekkerensimpel.com/salades/">Salade recepten</a></li>
+<li id="menu-item-51759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51759"><a href="https://www.lekkerensimpel.com/hoofdgerechten/soep/">Soepen</a></li>
+<li id="menu-item-24089" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24089"><a href="https://www.lekkerensimpel.com/dranken/">Dranken</a></li>
+<li id="menu-item-24087" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24087"><a href="https://www.lekkerensimpel.com/bakken/">Bakrecepten</a></li>
+</ul>
+</li>
+<li id="menu-item-34397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children toggle-submenu menu-item-34397"><a href="https://www.lekkerensimpel.com/themas/">Thema&#8217;s</a>
+<ul class="sub-menu">
+<li id="menu-item-51762" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51762"><a href="#">Seizoenen</a>
+<ul class="sub-menu">
+<li id="menu-item-50802" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50802"><a href="https://www.lekkerensimpel.com/herfst-recepten/">Herfstrecepten</a></li>
+<li id="menu-item-50801" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50801"><a href="https://www.lekkerensimpel.com/winter-recepten/">Winterrecepten</a></li>
+<li id="menu-item-51763" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51763"><a href="https://www.lekkerensimpel.com/lente-recepten/">Lenterecepten</a></li>
+<li id="menu-item-51764" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51764"><a href="https://www.lekkerensimpel.com/zomer-recepten/">Zomerrecepten</a></li>
+</ul>
+</li>
+<li id="menu-item-51765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51765"><a href="#">Feestdagen</a>
+<ul class="sub-menu">
+<li id="menu-item-50798" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50798"><a href="https://www.lekkerensimpel.com/sinterklaas-recepten/">Sinterklaas recepten</a></li>
+<li id="menu-item-50799" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children toggle-submenu menu-item-50799"><a href="https://www.lekkerensimpel.com/kerstrecepten/">Kerstrecepten</a>
+<ul class="sub-menu">
+<li id="menu-item-59205" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59205"><a href="https://www.lekkerensimpel.com/voorgerecht-kerst/">Voorgerechten Kerst</a></li>
+<li id="menu-item-59206" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59206"><a href="https://www.lekkerensimpel.com/hoofdgerecht-kerst/">Hoofdgerechten Kerst</a></li>
+<li id="menu-item-59207" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59207"><a href="https://www.lekkerensimpel.com/nagerecht-kerst/">Nagerechten Kerst</a></li>
+</ul>
+</li>
+<li id="menu-item-51766" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51766"><a href="https://www.lekkerensimpel.com/oud-en-nieuw/">Oud-en-nieuwrecepten</a></li>
+<li id="menu-item-51767" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51767"><a href="https://www.lekkerensimpel.com/paasrecepten/">Paasrecepten</a></li>
+<li id="menu-item-51768" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51768"><a href="https://www.lekkerensimpel.com/oranje-recepten/">Oranje recepten</a></li>
+</ul>
+</li>
+<li id="menu-item-51769" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51769"><a href="#">Keukens</a>
+<ul class="sub-menu">
+<li id="menu-item-34401" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-34401"><a href="https://www.lekkerensimpel.com/italiaanse-recepten/">Italiaanse recepten</a></li>
+<li id="menu-item-51770" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51770"><a href="https://www.lekkerensimpel.com/griekse-recepten/">Griekse recepten</a></li>
+<li id="menu-item-34402" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-34402"><a href="https://www.lekkerensimpel.com/mexicaanse-recepten/">Mexicaanse recepten</a></li>
+<li id="menu-item-51771" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51771"><a href="https://www.lekkerensimpel.com/amerikaanse-recepten/">Amerikaanse recepten</a></li>
+<li id="menu-item-51772" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51772"><a href="https://www.lekkerensimpel.com/oosterse-recepten/">Aziatische recepten</a></li>
+<li id="menu-item-51773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51773"><a href="https://www.lekkerensimpel.com/hollandse-recepten/">Hollandse recepten</a></li>
+<li id="menu-item-59208" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59208"><a href="https://www.lekkerensimpel.com/franse-keuken/">Franse recepten</a></li>
+<li id="menu-item-59209" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59209"><a href="https://www.lekkerensimpel.com/indische-gerechten/">Indische recepten</a></li>
+<li id="menu-item-59210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59210"><a href="https://www.lekkerensimpel.com/marokkaanse-gerechten/">Marokkaanse recepten</a></li>
+</ul>
+</li>
+<li id="menu-item-51774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51774"><a href="#">Overig</a>
+<ul class="sub-menu">
+<li id="menu-item-49322" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49322"><a href="https://www.lekkerensimpel.com/snelle-recepten/">Snelle recepten</a></li>
+<li id="menu-item-51798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51798"><a href="https://www.lekkerensimpel.com/tag/stamppot/">Stamppot recepten</a></li>
+<li id="menu-item-51781" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-51781"><a href="https://www.lekkerensimpel.com/hoofdgerechten/ovenschotels/">Ovenschotels</a></li>
+<li id="menu-item-56257" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-56257"><a href="https://www.lekkerensimpel.com/pizza-recepten/">Pizza recepten</a></li>
+<li id="menu-item-51799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51799"><a href="https://www.lekkerensimpel.com/tag/hartige-taart/">Hartige taarten</a></li>
+<li id="menu-item-51775" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51775"><a href="https://www.lekkerensimpel.com/tapas-recepten/">Tapas recepten</a></li>
+<li id="menu-item-51776" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51776"><a href="https://www.lekkerensimpel.com/barbecue-recepten/">Barbecue recepten</a></li>
+<li id="menu-item-51777" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51777"><a href="https://www.lekkerensimpel.com/high-tea-recepten/">High tea recepten</a></li>
+<li id="menu-item-51778" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51778"><a href="https://www.lekkerensimpel.com/kinderrecepten/">Kinderrecepten</a></li>
+<li id="menu-item-51779" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51779"><a href="https://www.lekkerensimpel.com/familie-recepten/">Familie recepten</a></li>
+<li id="menu-item-58237" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-58237"><a href="https://www.lekkerensimpel.com/gourmet-recepten/">Gourmet recepten</a></li>
+<li id="menu-item-51780" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51780"><a href="https://www.lekkerensimpel.com/campingrecepten/">Camping recepten</a></li>
+<li id="menu-item-56894" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-56894"><a href="https://www.lekkerensimpel.com/smoothie-recepten/">Smoothie recepten</a></li>
+</ul>
+</li>
+<li id="menu-item-51782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51782"><a href="#">Dieet</a>
+<ul class="sub-menu">
+<li id="menu-item-51783" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51783"><a href="https://www.lekkerensimpel.com/hoofdgerechten/vegetarisch-recepten/">Vegetarische recepten</a></li>
+<li id="menu-item-51784" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51784"><a href="https://www.lekkerensimpel.com/vegan-recepten/">Vegan recepten</a></li>
+<li id="menu-item-51785" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51785"><a href="https://www.lekkerensimpel.com/koolhydraatarme-recepten/">Koolhydraatarme recepten</a></li>
+<li id="menu-item-54783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54783"><a href="https://www.lekkerensimpel.com/tag/gezonde-recepten/">Gezonde recepten</a></li>
+<li id="menu-item-55738" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55738"><a href="https://www.lekkerensimpel.com/slanke-recepten/">Slanke recepten</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-51786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51786"><a href="#">Zoek op ingrediënt</a>
+<ul class="sub-menu">
+<li id="menu-item-51787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51787"><a href="https://www.lekkerensimpel.com/tag/kip/">Kip</a></li>
+<li id="menu-item-51788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51788"><a href="https://www.lekkerensimpel.com/tag/gehakt/">Gehakt</a></li>
+<li id="menu-item-51789" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51789"><a href="https://www.lekkerensimpel.com/hoofdgerechten/vlees/">Vlees</a></li>
+<li id="menu-item-51790" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51790"><a href="https://www.lekkerensimpel.com/hoofdgerechten/vis/">Vis</a></li>
+<li id="menu-item-51791" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51791"><a href="https://www.lekkerensimpel.com/hoofdgerechten/aardappel-recepten/">Aardappel</a></li>
+<li id="menu-item-51792" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51792"><a href="https://www.lekkerensimpel.com/hoofdgerechten/wraps/">Wraps</a></li>
+<li id="menu-item-51793" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51793"><a href="https://www.lekkerensimpel.com/hoofdgerechten/rijst/">Rijst</a></li>
+<li id="menu-item-51794" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-51794"><a href="https://www.lekkerensimpel.com/hoofdgerechten/pasta/">Pasta</a></li>
+<li id="menu-item-51795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51795"><a href="https://www.lekkerensimpel.com/tag/brood/">Brood</a></li>
+<li id="menu-item-59213" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59213"><a href="https://www.lekkerensimpel.com/tag/couscous/">Couscous</a></li>
+<li id="menu-item-59211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-59211"><a href="https://www.lekkerensimpel.com/recepten-met-ei/">Ei</a></li>
+</ul>
+</li>
+<li id="menu-item-22866" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children toggle-submenu menu-item-22866"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/inspiratie/">Inspiratie</a>
+<ul class="sub-menu">
+<li id="menu-item-29575" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29575"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/inspiratie/weekmenu/">Weekmenu&#8217;s</a></li>
+<li id="menu-item-22869" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22869"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/inspiratie/kooktips2/">Kooktips</a></li>
+<li id="menu-item-22867" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22867"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/inspiratie/achterdeschermen/">Kijkje achter de schermen</a></li>
+</ul>
+</li>
+<li id="menu-item-51796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children toggle-submenu menu-item-51796"><a href="#">Profiel</a>
+<ul class="sub-menu">
+<li id="menu-item-30176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30176"><a href="https://www.lekkerensimpel.com/profiel/">Mijn favoriete recepten</a></li>
+<li id="menu-item-30173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30173"><a href="https://www.lekkerensimpel.com/registreren/">Profiel aanmaken</a></li>
+<li id="menu-item-51837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51837"><a href="https://www.lekkerensimpel.com/login/">Login</a></li>
+</ul>
+</li>
+<li id="menu-item-13982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13982"><a href="https://www.lekkerensimpel.com/contact/">Contact</a></li>
+</ul>
+<a class="header__button" href="https://www.lekkerensimpel.com/login/">
+<i class="fas fa-heart"></i>
+</a>
+<button class="search-toggle" aria-controls="search-field" aria-expanded="false">
+<i class="fas fa-search"></i>
+</button>
+</nav>
+</header>
+<div class="hero">
+<a href="https://www.lekkerensimpel.com/login/" class="like-no-ajax next-to-title" data-post_id="59855"><i class="fas fa-heart"></i></a> <div class="hero__image image-placeholder">
+<picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1920x920.jpg.webp" type="image/webp"><img width="1920" height="920" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%20920'%3E%3C/svg%3E" class="attachment-hero size-hero webpexpress-processed" alt="Pastaschotel met spinazie en spekjes" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1920x920.jpg"><noscript><img width="1920" height="920" src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1920x920.jpg" class="attachment-hero size-hero webpexpress-processed" alt="Pastaschotel met spinazie en spekjes"></noscript></picture> </div>
+<div class="hero__inner">
+<div class="hero__content">
+<div class="grid-container">
+<h1 class="hero__title">Pastaschotel met spinazie en spekjes</h1>
+</div>
+</div>
+</div>
+</div>
+<main id="main-content" class="site-content">
+<div id="adf-billboard" style="text-align:center; margin:0 auto;"></div>
+<article id="post-59855" class="entry post-59855 post type-post status-publish format-standard has-post-thumbnail hentry category-italiaanse-recepten category-pasta category-ovenschotels category-hoofdgerechten tag-pasta tag-spek tag-spinazie meals_categories-hoofdgerecht dish_categories-ovenschotel dish_categories-pasta nc-is-auto-shared">
+<div class="grid-container">
+<div class="show-for-small-only">
+<div class="recipe__meta">
+<ul>
+<li>
+<span class="recipe__meta-icon">
+<i class="fas fa-utensils"></i>
+</span>
+<span class="recipe__meta-title">
+Hoofdgerecht </span>
+</li>
+<li>
+<span class="recipe__meta-icon">
+<i class="fas fa-user"></i>
+</span>
+<span class="recipe__meta-title">
+2 personen </span>
+</li>
+<li>
+<span class="recipe__meta-icon">
+<i class="fas fa-clock"></i>
+</span>
+<span class="recipe__meta-title">
+15 min. bereidingstijd <br> 10 min. oventijd </span>
+</li>
+</ul>
+</div>
+</div>
+<div class="tab-toggle">
+
+</div>
+<div class="grid-x grid-padding-x">
+<div class="cell medium-8 medium-order-2" data-tab-toggle="Recept" data-tab-toggle-active>
+<div class="entry__content" data-allow-full-width="false">
+<figure class="wp-block-image size-large is-style-default"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1024x683.jpg.webp 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-300x200.jpg.webp 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-768x512.jpg.webp 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-640x427.jpg.webp 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563.jpg.webp 1360w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img width="1024" height="683" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" alt="Pastaschotel met spinazie en spekjes" class="wp-image-60402 webpexpress-processed" data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1024x683.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-300x200.jpg 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-768x512.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-640x427.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563.jpg 1360w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1024x683.jpg"><noscript><img width="1024" height="683" src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1024x683.jpg" alt="Pastaschotel met spinazie en spekjes" class="wp-image-60402 webpexpress-processed" srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-1024x683.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-300x200.jpg 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-768x512.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563-640x427.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563.jpg 1360w" sizes="(max-width: 1024px) 100vw, 1024px"></noscript></picture></figure>
+<p>Een pastaschotel gaat er eigenlijk altijd wel in hier in huis, zo ook deze pastaschotel met spinazie en spekjes. We hebben de <a href="https://www.lekkerensimpel.com/recept-bechamelsaus/">bechamelsaus</a> voor dit recept zelf gemaakt, niet heel lastig en heel veel lekkerder dan uit een potje! </p>
+<h2 id="h-aan-de-slag-met-de-pastaschotel-met-spinazie">aan de slag met de pastaschotel met spinazie</h2>
+<p>Begin met het koken van de penne. Kook de penne beetgaar (al dente), volg hiervoor de instructies op de verpakking. Verwarm ondertussen de oven voor op 180 graden en snijd het teentje knoflook fijn. Bak de spekjes in een koekenpan zonder olie voor ongeveer 3-4 minuten. Bak dan de spinazie nog even een minuut of drie mee samen met de knoflook. Meng de spinazie en spekjes door de pasta en doe alles in een ovenschaal. </p>
+<figure class="wp-block-image size-large is-style-default"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-1024x683.jpg.webp 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-300x200.jpg.webp 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-768x512.jpg.webp 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-640x427.jpg.webp 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495.jpg.webp 1360w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img width="1024" height="683" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" alt="" class="wp-image-60398 webpexpress-processed" data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-1024x683.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-300x200.jpg 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-768x512.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-640x427.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495.jpg 1360w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-1024x683.jpg"><noscript><img width="1024" height="683" src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-1024x683.jpg" alt="" class="wp-image-60398 webpexpress-processed" srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-1024x683.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-300x200.jpg 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-768x512.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495-640x427.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9495.jpg 1360w" sizes="(max-width: 1024px) 100vw, 1024px"></noscript></picture></figure>
+<p>Dan is het nu tijd om de bechamelsaus te maken. Smelt de boter en zorg ervoor dat de boter niet bruin wordt. Voeg dan de bloem toe en roer dit tot een tot er een soort beslag ontstaat en laat even heel kort sudderen (maximaal 30 seconden). Doe dan beetje voor beetje de melk erbij en tot slot roer je de geraspte kaas, nootmuskaat en peper door de saus. </p>
+<figure class="wp-block-image size-large is-style-default"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-1024x762.jpg.webp 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-300x223.jpg.webp 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-768x571.jpg.webp 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-640x476.jpg.webp 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497.jpg.webp 1360w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img width="1024" height="762" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20762'%3E%3C/svg%3E" alt="" class="wp-image-60399 webpexpress-processed" data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-1024x762.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-300x223.jpg 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-768x571.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-640x476.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497.jpg 1360w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-1024x762.jpg"><noscript><img width="1024" height="762" src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-1024x762.jpg" alt="" class="wp-image-60399 webpexpress-processed" srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-1024x762.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-300x223.jpg 300w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-768x571.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497-640x476.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9497.jpg 1360w" sizes="(max-width: 1024px) 100vw, 1024px"></noscript></picture></figure>
+<p>Giet de saus over de pasta, nog een beetje extra geraspte kaas erover, gehalveerde cherrytomaatjes en de pastaschotel kan de oven in voor ongeveer 10-15 minuten tot de kaas gesmolten is. Eet smakelijk! </p>
+<blockquote class="wp-block-quote"><p>Geen fan van spekjes? Bak dan wat kipfilet blokjes! Ook erg lekker in dit recept. </p></blockquote>
+<figure class="wp-block-image size-large is-style-default"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-683x1024.jpg.webp 683w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-200x300.jpg.webp 200w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-768x1152.jpg.webp 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-1024x1536.jpg.webp 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-640x960.jpg.webp 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547.jpg.webp 1360w" sizes="(max-width: 683px) 100vw, 683px" type="image/webp"><img width="683" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20683%201024'%3E%3C/svg%3E" alt="Pastaschotel met spinazie en spekjes" class="wp-image-60401 webpexpress-processed" data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-683x1024.jpg 683w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-200x300.jpg 200w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-768x1152.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-1024x1536.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-640x960.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547.jpg 1360w" data-lazy-sizes="(max-width: 683px) 100vw, 683px" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-683x1024.jpg"><noscript><img width="683" height="1024" src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-683x1024.jpg" alt="Pastaschotel met spinazie en spekjes" class="wp-image-60401 webpexpress-processed" srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-683x1024.jpg 683w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-200x300.jpg 200w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-768x1152.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-1024x1536.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547-640x960.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9547.jpg 1360w" sizes="(max-width: 683px) 100vw, 683px"></noscript></picture></figure>
+<p>Bewaar het recept voor de pastaschotel met spinazie op <a href="https://nl.pinterest.com/lekkerensimpel/">Pinterest</a>! </p>
+<figure class="wp-block-image size-large is-style-default"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-683x1024.jpg.webp 683w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-200x300.jpg.webp 200w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-768x1152.jpg.webp 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-1024x1536.jpg.webp 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-640x960.jpg.webp 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557.jpg.webp 1360w" sizes="(max-width: 683px) 100vw, 683px" type="image/webp"><img width="683" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20683%201024'%3E%3C/svg%3E" alt="Pastaschotel met spinazie en spekjes" class="wp-image-60400 webpexpress-processed" data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-683x1024.jpg 683w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-200x300.jpg 200w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-768x1152.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-1024x1536.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-640x960.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557.jpg 1360w" data-lazy-sizes="(max-width: 683px) 100vw, 683px" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-683x1024.jpg"><noscript><img width="683" height="1024" src="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-683x1024.jpg" alt="Pastaschotel met spinazie en spekjes" class="wp-image-60400 webpexpress-processed" srcset="https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-683x1024.jpg 683w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-200x300.jpg 200w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-768x1152.jpg 768w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-1024x1536.jpg 1024w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557-640x960.jpg 640w, https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9557.jpg 1360w" sizes="(max-width: 683px) 100vw, 683px"></noscript></picture></figure>
+<div class="wp-block-vo-heading-line"><div class="block-title h2">meer lekkere pasta recepten</div></div>
+<div class="wp-block-vo-recipes">
+<div class="grid-x grid-margin-x grid-margin-y">
+<div class="cell large-4 medium-6 small-12">
+<article id="post-58672" class="post-item post-58672 post type-post status-publish format-standard has-post-thumbnail hentry category-herfst-recepten category-winter-recepten category-italiaanse-recepten category-vlees category-pasta category-hoofdgerechten tag-pasta tag-rode-wijn tag-rundvlees tag-wortel meals_categories-hoofdgerecht dish_categories-pasta dish_categories-vlees nc-is-auto-shared">
+<a href="https://www.lekkerensimpel.com/pasta-met-stoofvlees/" rel="bookmark" class="post-item__anchor"></a>
+<div class="post-item__image image-placeholder">
+<picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2020/11/IMG_6163-1-720x400.jpg.webp" type="image/webp"><img width="720" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20720%20400'%3E%3C/svg%3E" class="attachment-post-item-thumbnail size-post-item-thumbnail wp-post-image webpexpress-processed" alt="Pasta met stoofvlees" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2020/11/IMG_6163-1-720x400.jpg"><noscript><img width="720" height="400" src="https://www.lekkerensimpel.com/wp-content/uploads/2020/11/IMG_6163-1-720x400.jpg" class="attachment-post-item-thumbnail size-post-item-thumbnail wp-post-image webpexpress-processed" alt="Pasta met stoofvlees"></noscript></picture>
+<a href="https://www.lekkerensimpel.com/login/" class="like-no-ajax next-to-title" data-post_id="58672"><i class="fas fa-heart"></i></a> </div>
+<div class="post-item__inner">
+<header class="post-item__header">
+<h4 class="post-item__title">Pasta met stoofvlees</h4> </header>
+</div>
+</article>
+</div>
+<div class="cell large-4 medium-6 small-12">
+<article id="post-54419" class="post-item post-54419 post type-post status-publish format-standard has-post-thumbnail hentry category-italiaanse-recepten category-snelle-recepten category-pasta category-hoofdgerechten tag-rucola tag-zongedroogde-tomaatjes meals_categories-hoofdgerecht dish_categories-pasta nc-is-auto-shared">
+<a href="https://www.lekkerensimpel.com/pasta-alfredo-met-spek/" rel="bookmark" class="post-item__anchor"></a>
+<div class="post-item__image image-placeholder">
+<picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_6637-720x400.jpg.webp" type="image/webp"><img width="720" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20720%20400'%3E%3C/svg%3E" class="attachment-post-item-thumbnail size-post-item-thumbnail wp-post-image webpexpress-processed" alt="" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_6637-720x400.jpg"><noscript><img width="720" height="400" src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_6637-720x400.jpg" class="attachment-post-item-thumbnail size-post-item-thumbnail wp-post-image webpexpress-processed" alt=""></noscript></picture>
+<a href="https://www.lekkerensimpel.com/login/" class="like-no-ajax next-to-title" data-post_id="54419"><i class="fas fa-heart"></i></a> </div>
+<div class="post-item__inner">
+<header class="post-item__header">
+<h4 class="post-item__title">Pasta alfredo met spek</h4> </header>
+</div>
+</article>
+</div>
+<div class="cell large-4 medium-6 small-12">
+<article id="post-51068" class="post-item post-51068 post type-post status-publish format-standard has-post-thumbnail hentry category-lekker-en-simpel category-herfst-recepten category-winter-recepten category-lente-recepten category-zomer-recepten category-italiaanse-recepten category-vlees category-pasta category-ovenschotels category-hoofdgerechten tag-gehakt tag-bechamelsaus tag-lasagne tag-tomaat meals_categories-hoofdgerecht dish_categories-ovenschotel dish_categories-pasta dish_categories-vlees nc-is-auto-shared">
+<a href="https://www.lekkerensimpel.com/lasagne-bolognese/" rel="bookmark" class="post-item__anchor"></a>
+<div class="post-item__image image-placeholder">
+<picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_1595-720x400.jpg.webp" type="image/webp"><img width="720" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20720%20400'%3E%3C/svg%3E" class="attachment-post-item-thumbnail size-post-item-thumbnail wp-post-image webpexpress-processed" alt="" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_1595-720x400.jpg"><noscript><img width="720" height="400" src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_1595-720x400.jpg" class="attachment-post-item-thumbnail size-post-item-thumbnail wp-post-image webpexpress-processed" alt=""></noscript></picture>
+<a href="https://www.lekkerensimpel.com/login/" class="like-no-ajax next-to-title" data-post_id="51068"><i class="fas fa-heart"></i></a> </div>
+<div class="post-item__inner">
+<header class="post-item__header">
+<h4 class="post-item__title">Lasagne bolognese</h4> </header>
+</div>
+</article>
+</div>
+</div>
+</div>
+<div style='display:none;' class='shareaholic-canvas' data-app='share_buttons' data-title='Pastaschotel met spinazie en spekjes' data-link='https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/' data-app-id-name='post_below_content'></div> </div>
+</div>
+<div class="cell medium-4 large-4 medium-order-1">
+<div class="entry__sidebar" data-tab-toggle="Benodigdheden">
+<div class="hide-for-small-only">
+<div class="recipe__meta">
+<ul>
+<li>
+<span class="recipe__meta-icon">
+<i class="fas fa-utensils"></i>
+</span>
+<span class="recipe__meta-title">
+Hoofdgerecht </span>
+</li>
+<li>
+<span class="recipe__meta-icon">
+<i class="fas fa-user"></i>
+</span>
+<span class="recipe__meta-title">
+2 personen </span>
+</li>
+<li>
+<span class="recipe__meta-icon">
+<i class="fas fa-clock"></i>
+</span>
+<span class="recipe__meta-title">
+15 min. bereidingstijd <br> 10 min. oventijd </span>
+</li>
+</ul>
+</div>
+</div>
+<div class="recipe__necessities">
+<div class="recipe__sidebar-title h3">Benodigdheden</div>
+<ul>
+<li>
+<span class="value">
+150 </span>
+<span class="measure">
+gr </span>
+<span class="ingredient">
+penne </span>
+</li>
+<li>
+<span class="value">
+75 </span>
+<span class="measure">
+gr </span>
+<span class="ingredient">
+spekjes </span>
+</li>
+<li>
+<span class="value">
+1 </span>
+<span class="measure">
+teentje </span>
+<span class="ingredient">
+knoflook </span>
+</li>
+<li>
+<span class="value">
+200 </span>
+<span class="measure">
+gr </span>
+<span class="ingredient">
+spinazie </span>
+</li>
+<li>
+<span class="value">
+50 </span>
+<span class="measure">
+gr </span>
+<span class="ingredient">
+boter </span>
+</li>
+<li>
+<span class="value">
+50 </span>
+<span class="measure">
+gr </span>
+<span class="ingredient">
+bloem </span>
+</li>
+<li>
+<span class="value">
+500 </span>
+<span class="measure">
+ml </span>
+<span class="ingredient">
+melk </span>
+</li>
+<li>
+<span class="value">
+100 </span>
+<span class="measure">
+gr </span>
+<span class="ingredient">
+geraspte kaas </span>
+<span class="description">
+plus een beetje extra </span>
+</li>
+<li>
+<span class="measure">
+tl </span>
+<span class="ingredient">
+nootmuskaat </span>
+</li>
+<li>
+<span class="ingredient">
+cherrytomaatjes </span>
+</li>
+<li>
+ <span class="ingredient">
+peper </span>
+</li>
+</ul>
+</div>
+</div>
+<div class="cookbooks">
+<h2 class="cookbooks__title">Onze kookboeken</h2>
+<div class="cookbooks__inner">
+<div class="grid-x grid-margin-x">
+<div class="cell small-6 cookbook__item"><a href="https://partner.bol.com/click/click?p=2&t=url&s=10823&f=TXL&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fp%2Fmijn-receptenboek%2F9300000016272172%2F&name=Mijn%20receptenboek%2C%20Sofie%20Chanou" target="_blank"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2020/11/LS-KOOKSCHRIFT.jpg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="webpexpress-processed" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2020/11/LS-KOOKSCHRIFT.jpg"><noscript><img src="https://www.lekkerensimpel.com/wp-content/uploads/2020/11/LS-KOOKSCHRIFT.jpg" class="webpexpress-processed"></noscript></picture></a></div><div class="cell small-6 cookbook__item"><a href="https://www.bol.com/nl/p/lekker-simpel/9200000059528035/?Referrer=ADVNLPPcef2a700cdbf92970004c5a006000010823&utm_source=10823&utm_medium=Affiliates&utm_campaign=CPS&utm_content=txl" target="_blank"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LEKKER-EN-SIMPEL-COVER-2-1.jpg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="webpexpress-processed" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LEKKER-EN-SIMPEL-COVER-2-1.jpg"><noscript><img src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LEKKER-EN-SIMPEL-COVER-2-1.jpg" class="webpexpress-processed"></noscript></picture></a></div><div class="cell small-6 cookbook__item"><a href="https://www.bol.com/nl/p/lekker-simpel-1x-kopen-5x-koken/9200000078238152/?Referrer=ADVNLPPcef2a500cdbf929700eab86a3c000010823&utm_source=10823&utm_medium=Affiliates&utm_campaign=CPS&utm_content=txl" target="_blank"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/Schermafbeelding-2017-08-03-om-11.50.28-1.jpg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="webpexpress-processed" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/Schermafbeelding-2017-08-03-om-11.50.28-1.jpg"><noscript><img src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/Schermafbeelding-2017-08-03-om-11.50.28-1.jpg" class="webpexpress-processed"></noscript></picture></a></div><div class="cell small-6 cookbook__item"><a href="https://www.bol.com/nl/p/lekker-simpel-elke-dag/9200000115140306/?Referrer=ADVNLPPcef2a200cdbf9297004d7c8bd0000010823&utm_source=10823&utm_medium=Affiliates&utm_campaign=CPS&utm_content=txl" target="_blank"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LS-ORIGINALS-COVER-1.jpg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="webpexpress-processed" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LS-ORIGINALS-COVER-1.jpg"><noscript><img src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LS-ORIGINALS-COVER-1.jpg" class="webpexpress-processed"></noscript></picture></a></div><div class="cell small-6 cookbook__item"><a href="https://www.bol.com/nl/f/-/9300000001952086/?Referrer=ADVNLPPcef2a700cdbf929700ba5fa316000010823&utm_source=10823&utm_medium=Affiliates&utm_campaign=CPS&utm_content=txl" target="_blank"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LS-ZOET-COVER.jpg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="webpexpress-processed" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LS-ZOET-COVER.jpg"><noscript><img src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/LS-ZOET-COVER.jpg" class="webpexpress-processed"></noscript></picture></a></div><div class="cell small-6 cookbook__item"><a href="https://www.bol.com/nl/p/100-snelle-wereldrecepten/9200000095225116/?suggestionType=typedsearch&bltgh=l2xyvdSThRdTebumW1tAZw.1.2.ProductImage&Referrer=ADVNLPPcef2a2001e6d6bf30006889026000010823&utm_source=10823&utm_medium=Affiliates&utm_campaign=CPS&utm_content=txl" target="_blank"><picture><source data-lazy-srcset="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/Cover-wereldrecepten-1.jpg.webp" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="webpexpress-processed" data-lazy-src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/Cover-wereldrecepten-1.jpg"><noscript><img src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/Cover-wereldrecepten-1.jpg" class="webpexpress-processed"></noscript></picture></a></div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div class="related-posts">
+<div class="grid-container">
+<div data-widget="plista_widget_belowArticle"></div>
+<script type="text/javascript">
+            if (!window.PLISTA || !PLISTA.publickey) {
+                window.PLISTA = {
+                    publickey: "818aaddfb3e43e6ce1a1eb1f",
+                    item: {
+                        objectid: "59855>", //unique ID, alphanumeric
+                        title: "Pastaschotel met spinazie en spekjes", //max 255 characters
+                        text: "Een pastaschotel gaat er eigenlijk altijd wel in hier in huis, zo ook deze pastaschotel met spinazie en spekjes. We hebben de bechamelsaus voor dit recept zelf gemaakt, niet heel lastig en heel veel lekkerder dan uit een potje! aan [...]", //max 255 characters
+                        url: "https://www.lekkerensimpel.com/pastaschotel-met-spinazie-en-spekjes/", //max 1024 characters
+                        img: "https://www.lekkerensimpel.com/wp-content/uploads/2021/01/IMG_9563.jpg", //max 255 characters
+                        category: "Italiaanse recepten'",
+                        created_at: "1612591200" //UNIX timestamp
+                    }
+                };
+                (function(){var n="script",d=document,s=d.createElement(n),s0=d.getElementsByTagName(n)[0];
+                    s.async="async";s.type="text/javascript";s.src=(d.location.protocol==="https:" ? "https:" : "http:")+"//static.plista.com/async.js";
+                    s0.parentNode.insertBefore(s,s0)}());
+            }
+        </script>
+</div>
+</div>
+<div class="comments" id="comments">
+<div class="grid-container">
+<div class="grid-x grid-margin-x align-center">
+<div class="cell small-12 medium-8">
+<div class="comments__inner">
+<div class="comments__title h2">
+Laat een reactie achter </div>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Geef een reactie <small><a rel="nofollow" id="cancel-comment-reply-link" href="/pastaschotel-met-spinazie-en-spekjes/#respond" style="display:none;">Reactie annuleren</a></small></h3><form action="https://www.lekkerensimpel.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Het e-mailadres wordt niet gepubliceerd.</span> Vereiste velden zijn gemarkeerd met <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Reactie</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Naam <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Site</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Mijn naam, e-mail en site bewaren in deze browser voor de volgende keer wanneer ik een reactie plaats.</label></p>
+<p class="wpgdprc-checkbox"><input type="checkbox" name="wpgdprc" id="wpgdprc" value="1" /><label for="wpgdprc">Wanneer je dit formulier gebruikt, ga je akkoord met de opslag en verwerking van jouw gegevens door deze website. <abbr class="wpgdprc-required" title="Je moet dit selectievakje accepteren.">*</abbr></label></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Reactie plaatsen" /> <input type='hidden' name='comment_post_ID' value='59855' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a2b1968fa0" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="140" /></p></form> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="adf-billboard2" style="text-align:center; margin:0 auto;"></div>
+</main>
+<footer class="site-footer">
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-margin-y">
+<div class="cell large-2 medium-4 small-6">
+<aside id="text-57" class="widget widget_text"><div class="widget__title">Recepten</div> <div class="textwidget"><div align="center">
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/ontbijtrecepten/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/ontbijtrecepten/">Ontbijt</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/lunchrecepten" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/lunchrecepten">Lunch</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/tussendoortjes/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/tussendoortjes/">Tussendoortjes</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/tag/voorgerecht/" data-mce-href="https://www.lekkerensimpel.com/tag/voorgerecht/">Voorgerechten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/bijgerechten/" data-mce-href="https://www.lekkerensimpel.com/bijgerechten/">Bijgerechten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/">Hoofdgerechten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/nagerechten/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/nagerechten/">Desserts</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/salades/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/salades/">Salades</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/dranken/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/dranken/">Dranken</a></div>
+</div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/bakken/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/bakken/">Bakrecepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/salades/dressings/" data-mce-href="https://www.lekkerensimpel.com/lekker-en-simpel/salades/dressings/">Dressings en sauzen</a></div>
+<div align="center"></div>
+</div>
+</aside><aside id="text-46" class="widget widget_text"><div class="widget__title">Seizoenen</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/herfst-recepten/">Herfst recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/winter-recepten/">Winter recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lente-recepten/">Lente recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/zomer-recepten/">Zomer recepten</a></div>
+</div>
+</aside> </div>
+<div class="cell large-2 medium-4 small-6">
+<aside id="text-54" class="widget widget_text"><div class="widget__title">Thema&#8217;s</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/snelle-recepten/">Snelle recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/soep/">Soep recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/tapas-recepten/">Tapas recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/themas/barbecue/">Barbecue recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/high-tea-recepten/">High-tea recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/kinderrecepten/">Kinderrecepten</a></div>
+<div align="center"><a href="http://lekkerensimpel.com/familie-recepten">Familierecepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/campingrecepten/">Campingrecepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/stamppot-recepten/">Stamppot recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/hamburger-recepten/">Hamburger recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/gourmet-recepten/">Gourmet recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/cake-recepten/">Cake recepten</a><br />
+<a href="https://www.lekkerensimpel.com/pizza-recepten/">Pizza recepten</a><br />
+<a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/ovenschotels/">Ovenschotels</a></div>
+<div align="center"><a href="http://lekkerensimpel.com/tag/hartige-taart">Hartige taarten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/smoothie-recepten/">Smoothie recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/spaghetti-recepten/">Spaghetti recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/omelet-recepten/">Omelet recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/gerecht/hartig/">Hartig</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/gerecht/zoet/">Zoet</a></div>
+</div>
+</aside> </div>
+<div class="cell large-2 medium-4 small-6">
+<aside id="text-55" class="widget widget_text"><div class="widget__title">Keukens</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/italiaanse-recepten">Italiaanse recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/griekse-recepten/">Griekse recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/mexicaanse-recepten/">Mexicaanse recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/amerikaanse-recepten/">Amerikaanse recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/oosterse-recepten/">Oosterse recepten</a><br />
+<a href="https://www.lekkerensimpel.com/hollandse-recepten/">Hollandse recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/spaanse-recepten/">Spaanse recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/indische-gerechten/">Indische gerechten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/marokkaanse-gerechten/">Marokkaanse gerechten</a><br />
+<a href="https://www.lekkerensimpel.com/franse-keuken/">Franse keuken</a></div>
+</div>
+</aside> </div>
+<div class="cell large-2 medium-4 small-6">
+<aside id="text-56" class="widget widget_text"><div class="widget__title">Ingredient</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/hoofdgerechten/aardappel-recepten/">Aardappel recepten</a><br />
+<a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/rijst/">Rijst recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/pasta/">Pasta recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/tag/couscous/">Couscous recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/recepten-met-ei/">Recepten met ei</a><br />
+<a href="https://www.lekkerensimpel.com/tag/brood/">Recepten met brood</a><br />
+<a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/wraps-hoofdgerechten/">Recepten met wraps</a></div>
+<div align="center"></div>
+<div align="center"></div>
+</div>
+</aside><aside id="text-58" class="widget widget_text"><div class="widget__title">Vlees/vis/vega(n)</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/tag/kip/">Recepten met kip</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/tag/gehakt/">Recepten met gehakt</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/vlees/">Recepten met vlees</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/vis/">Recepten met vis</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/lekker-en-simpel/hoofdgerechten/vegetarisch-hoofdgerechten/">Vegetarische recepten</a><br />
+<a href="https://www.lekkerensimpel.com/vegan-recepten/">Vegan recepten</a></div>
+</div>
+</aside> </div>
+<div class="cell large-2 medium-4 small-6">
+<aside id="text-47" class="widget widget_text"><div class="widget__title">Feestdagen</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/sinterklaas-recepten/">Sinterklaas recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/kerstrecepten/">Kerstrecepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/oud-en-nieuw/">Oud-en-nieuwrecepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/paasrecepten/">Paasrecepten</a></div>
+<div align="center"><a href="http://lekkerensimpel.com/oranje-recepten/">Oranjerecepten</a></div></div>
+</aside><aside id="text-59" class="widget widget_text"><div class="widget__title">Dieet</div> <div class="textwidget"><div align="center"><a href="https://www.lekkerensimpel.com/tag/gezonde-recepten/">Gezonde recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/slanke-recepten/">Slanke recepten</a></div>
+<div align="center"><a href="https://www.lekkerensimpel.com/koolhydraatarme-recepten/">Koolhydraatarme recepten</a></div>
+</div>
+</aside> </div>
+<div class="cell large-2 medium-4 small-6">
+<ul class="social-list"><li><a href="https://www.facebook.com/LekkerEnSimpelNL/" target="_blank"><i class="fab fa-facebook-square"></i> <span>Facebook</span> </a></li><li><a href="https://twitter.com/lekkerensimpel" target="_blank"><i class="fab fa-twitter-square"></i> <span>Twitter</span> </a></li><li><a href="https://www.instagram.com/lekkerensimpel/" target="_blank"><i class="fab fa-instagram-square"></i> <span>Instagram</span> </a></li><li><a href="https://www.youtube.com/lekkerensimpel" target="_blank"><i class="fab fa-youtube-square"></i> <span>Youtube</span> </a></li><li><a href="https://www.pinterest.com/lekkerensimpel/" target="_blank"><i class="fab fa-pinterest-square"></i> <span>Pinterest</span> </a></li></ul> </div>
+</div>
+<div class="site-footer__copyright">
+Copyright &copy; 2021 - Lekker en Simpel </div>
+</div>
+</footer>
+<script data-minify="1" type='text/javascript' src='https://www.lekkerensimpel.com/wp-content/cache/min/1/wp-content/plugins/page-links-to/dist/new-tab-7b5b9c59da98b147a37ed4689950d9c9.js' id='page-links-to-js'></script>
+<script type='text/javascript' id='wpgdprc.js-js-extra'>
+/* <![CDATA[ */
+var wpgdprcData = {"ajaxURL":"https:\/\/www.lekkerensimpel.com\/wp-admin\/admin-ajax.php","ajaxSecurity":"f64e13976f","isMultisite":"","path":"\/","blogId":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lekkerensimpel.com/wp-content/plugins/wp-gdpr-compliance/assets/js/front.min.js?ver=1594817082' id='wpgdprc.js-js'></script>
+<script type='text/javascript' src='https://www.lekkerensimpel.com/wp-includes/js/comment-reply.min.js' id='comment-reply-js'></script>
+<script type='text/javascript' id='vo.app-js-extra'>
+/* <![CDATA[ */
+var vo = {"ajaxURL":"https:\/\/www.lekkerensimpel.com\/wp-admin\/admin-ajax.php","ajaxSecurity":"22ae24d5ef","pageNr":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lekkerensimpel.com/wp-content/themes/vo-theme/assets/js/app.min.js?ver=1597827531' id='vo.app-js'></script>
+<script type='text/javascript' src='https://www.lekkerensimpel.com/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script data-minify="1" async="async" type='text/javascript' src='https://www.lekkerensimpel.com/wp-content/cache/min/1/wp-content/plugins/akismet/_inc/form-f2e80ac06d694c8244094bb9a32e6ad9.js' id='akismet-form-js'></script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.lekkerensimpel.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script><script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel='stylesheet' id='wp-block-library-css'  href='https://www.lekkerensimpel.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' /><link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://www.lekkerensimpel.com/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.13.0' type='text/css' media='all' /><link rel='stylesheet' id='wpgdprc.css-css'  href='https://www.lekkerensimpel.com/wp-content/plugins/wp-gdpr-compliance/assets/css/front.min.css?ver=1594817082' type='text/css' media='all' /><link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Karla%3A400%2C700%7CRaleway%3A700&#038;display=swap' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='vo.stylesheet-css'  href='https://www.lekkerensimpel.com/wp-content/cache/min/1/wp-content/themes/vo-theme/style-a596bb3ec42a3c8916cc095ec9f7b47c.css' type='text/css' media='all' /></noscript></body>
+</html>
