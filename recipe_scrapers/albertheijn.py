@@ -47,14 +47,19 @@ class AlbertHeijn(AbstractScraper):
         ]
 
     def instructions(self):
-        return "\n".join(
+        instructions = ""
+        if self.soup.find("section", itemprop="recipeInstructions").find_all("li"):
+            instructions = "\n".join(
             [
                 instruction.text
                 for instruction in self.soup.find(
                     "section", itemprop="recipeInstructions"
                 ).find_all("li")
-            ]
-        )
+            ])
+        else:
+            instructions = self.soup.find("section", {"itemprop" : "recipeInstructions", "class" : "preparation"}).find_all("p",recursive=False)[0].text
+        return instructions
+        
 
     def cuisine(self):
         return (
